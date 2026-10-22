@@ -38,3 +38,5 @@ The first three commands check mathematics; the last checks file integrity only.
 ## Independently checked partial Lean companion
 
 The [partial formalization](partial-formalization/README.md) contains the frozen first batch: 53 theorems and 12 definitions independently recompiled and axiom-audited, using only the three standard axioms. It does not prove the full theorem: B=P(t³), general interlacing and exceptional-parameter closure remain missing. See the [precise independent AI audit](partial-formalization/AUDIT_REPORT.md). No human peer review or full Lean certification is claimed.
+
+A [fresh Linux cloud-source recompilation](audit/2026-10-22-cloud-recompilation/CLOUD_RECOMPILATION.md), dated 22 October 2026, independently passes the same 53-theorem/12-definition snapshot with exact dependency pins and normalized logs. This is additional reproducibility evidence, not new theorem coverage or a completed formalization.

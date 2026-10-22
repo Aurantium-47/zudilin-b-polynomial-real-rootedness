@@ -1,0 +1,79 @@
+{
+  "status": "PASS_PARTIAL_ONLY",
+  "audit_date_utc": "2026-10-22",
+  "scope": "Recompilation of the unchanged published phase-1 snapshot; no newly proved mathematical statements are counted.",
+  "original_theorems": 53,
+  "original_definitions": 12,
+  "original_axiom_audit_entries": 53,
+  "independent_declaration_audit_entries": 65,
+  "preexisting_supplementary_boundary_checks": 3,
+  "supplementary_checks_are_not_added_to_original_53": true,
+  "compile_checks": [
+    {
+      "source": "Zudilin/Basic.lean",
+      "log": "logs/basic.log",
+      "exit_code": 0
+    },
+    {
+      "source": "Zudilin/BaseCase.lean",
+      "log": "logs/base-case.log",
+      "exit_code": 0
+    },
+    {
+      "source": "Zudilin/OriginalSum.lean",
+      "log": "logs/original-sum.log",
+      "exit_code": 0
+    },
+    {
+      "source": "Zudilin.lean",
+      "log": "logs/main.log",
+      "exit_code": 0
+    },
+    {
+      "source": "AxiomAudit.lean",
+      "log": "logs/axioms.log",
+      "exit_code": 0
+    },
+    {
+      "source": "IndependentAudit.lean",
+      "log": "logs/independent-axioms-types.log",
+      "exit_code": 0
+    },
+    {
+      "source": "ReviewChecks.lean",
+      "log": "logs/review-checks.log",
+      "exit_code": 0
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unexpected_axioms": [],
+  "sorry_axiom_found": false,
+  "published_53_axiom_output_lines_match": true,
+  "all_seven_lean_source_files_byte_identical_to_published_snapshot": true,
+  "all_dependency_heads_match_lockfile": true,
+  "tracked_dependency_source_changes": false,
+  "dependency_mode": "Source-built import closure; official Lean distribution for core/Std.",
+  "compiler_flags": [
+    "-j",
+    "1",
+    "-s",
+    "131072",
+    "-DElab.async=false"
+  ],
+  "dependency_mathlib_flags": [
+    "-j",
+    "1",
+    "-s",
+    "131072",
+    "-DElab.async=false",
+    "-DautoImplicit=false",
+    "-DmaxSynthPendingDepth=3"
+  ],
+  "full_B_polynomial_theorem_formalized": false,
+  "human_peer_review": false,
+  "independent_kernel_implementation": false
+}

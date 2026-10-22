@@ -1,0 +1,104 @@
+{
+  "audit_date_utc": "2026-10-22",
+  "repository": "https://github.com/Aurantium-47/zudilin-b-polynomial-real-rootedness",
+  "source_commit": "bdf93b3006ba8aa5b97290163de169a6376dc31a",
+  "source_directory": "partial-formalization",
+  "lean": {
+    "version": "4.19.0",
+    "commit": "6caaee842e94",
+    "platform": "x86_64-unknown-linux-gnu",
+    "distribution": "official release",
+    "archive_url": "https://github.com/leanprover/lean4/releases/download/v4.19.0/lean-4.19.0-linux.tar.zst",
+    "archive_sha256": "6fe3ce97a58f44e2b3567d455b994eacec5bfe9ae7774f2a573444480ba813fe"
+  },
+  "lake": {
+    "version": "5.0.0-6caaee8",
+    "lean_version": "4.19.0"
+  },
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "revision": "77e08eddc486491d7b9e470926b3dbe50319451a",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "revision": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "c4919189477c3221e6a204008998b0d724f49904",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "revision": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "revision": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "revision": "f5d04a9c4973d401c8c92500711518f7c656f034",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "revision": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+      "verified_head_matches": true,
+      "tracked_source_changes": false
+    }
+  ],
+  "inputs_sha256": {
+    "AxiomAudit.lean": "d5978843916b80648eb4dda9a558582f32a2888c7982db7cc598d52c58a86aba",
+    "IndependentAudit.lean": "d26240918054c0cae71e3edbbf2ee12ec46d2767acf54efd81151fba7ea95655",
+    "ReviewChecks.lean": "a4d080c36a0f5cf8614452a17ab0248a22395de6fa9d369ce230a2969a0097fc",
+    "Zudilin/BaseCase.lean": "302cf8392f06983a03db60e79940ce0ce0dcd3ef53ae25859122f05e38c5a853",
+    "Zudilin/Basic.lean": "28fc1afd6617cdab63d1e120b334739fda194557b719e957d1773e33dffd9299",
+    "Zudilin/OriginalSum.lean": "8b0dbbfbd54104a176a6a6ed13c1bab8d81073131eb8de6b6ed6a1b7828ddec0",
+    "Zudilin.lean": "28eed832d70704df731deb43cbfc0ded9ff446b46261c72dedfda5490506a98a",
+    "lake-manifest.json": "f48d3469f306b7cfc32e3f99602280ed25070a7d928a0e1f3501feb7ca5a2385",
+    "lakefile.toml": "ebe10e9db24ad9df0111e26597c82807817de18bf045caef75a1501cc9fd973c",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+  },
+  "proofwidgets_js_prerequisites": {
+    "source_revision": "c4919189477c3221e6a204008998b0d724f49904",
+    "commands": [
+      "npm ci --ignore-scripts --no-audit --no-fund",
+      "npm run build-dev"
+    ],
+    "tracked_package_lock_sha256": "ba30505ac4dad0c299914b13eed2cf7d030d8d0eada1ca7846aa401d04723708"
+  },
+  "dependency_verification": "The needed non-core Lean import closure was rebuilt from these pinned sources. Lean core and Std came from the official Lean distribution. This is not a rebuild of all mathlib modules or an independent kernel implementation."
+}

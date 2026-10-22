@@ -1,0 +1,52 @@
+{
+  "files": {
+    "CLOUD_RECOMPILATION.md": {
+      "bytes": 3667,
+      "sha256": "f4e476a970239abb723948326474d56a5683a4d4cd6174c61e68b6da8c5591f0"
+    },
+    "cloud-source-manifest.json": {
+      "bytes": 4403,
+      "sha256": "b64ecba5e68e2f81ca20c645f99bfa4a9656ca95b742dd29f870e49b002aba17"
+    },
+    "cloud-validation.json": {
+      "bytes": 2073,
+      "sha256": "39959c60bf5326c5f64b19a8cbf93613b57971b996aa59346c3de73ef92abde8"
+    },
+    "logs/axioms.log": {
+      "bytes": 4759,
+      "sha256": "20655a84305ba7fbce53f7a1036e775f1f8170c6b37d37654f551e1a7c0b73a0"
+    },
+    "logs/base-case.log": {
+      "bytes": 12,
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120"
+    },
+    "logs/basic.log": {
+      "bytes": 12,
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120"
+    },
+    "logs/independent-axioms-types.log": {
+      "bytes": 19652,
+      "sha256": "ef318292ce3f871c3263335723ac35ee1a68ba3610c35e509cdf76f847b5c14f"
+    },
+    "logs/main.log": {
+      "bytes": 12,
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120"
+    },
+    "logs/original-sum.log": {
+      "bytes": 12,
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120"
+    },
+    "logs/review-checks.log": {
+      "bytes": 312,
+      "sha256": "a62f876ada6cca4c4f42573c8419b06fbbae5883e1a1cbb162340decc30a1bce"
+    },
+    "logs/verify-summary.log": {
+      "bytes": 253,
+      "sha256": "b51f3528cd88fd120bcab9e1ca746368f7e73b9be825f3098c4d9eaf6c2303c7"
+    },
+    "scripts/check.sh": {
+      "bytes": 1417,
+      "sha256": "3c458d3e7c7f43498d78bf78ca34330732098d7d47e066c90630e8d67f4afce6"
+    }
+  }
+}

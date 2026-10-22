@@ -3,16 +3,16 @@
   "scope": "All files in PUBLIC_FILES.txt except this manifest, whose self-hash is excluded. Hashes verify identity only, not mathematical correctness.",
   "files": {
     "PUBLIC_FILES.txt": {
-      "bytes": 1425,
-      "sha256": "cb7cb57b6590829767164d324757a828b597c5548a436a4cc4c1f8f7e4e2cb20"
+      "bytes": 2178,
+      "sha256": "cc6ccec0bb1cca31a4463e2500e5c7f0c349e733d5483e32334144fd00882a22"
     },
     "README.md": {
-      "bytes": 4093,
-      "sha256": "0df4a78650387eeaa1576fa30c526ce24aa1cbb325a6b8421dbaa59281350aac"
+      "bytes": 4434,
+      "sha256": "917c580540d2b0ad742e39ea5bd4de81ffce2984ade93ff7f19c2d5bd9a1512a"
     },
     "README.zh.md": {
-      "bytes": 3727,
-      "sha256": "2b9b7be8f3fd17ec9ce7a94b50f27a7c4e39404d98b9fe89584be56d37013221"
+      "bytes": 4038,
+      "sha256": "2f09cad938f689e6b30972098a4cab155fbc539124fa71c03290204a9026513f"
     },
     "REFERENCES.md": {
       "bytes": 3268,
@@ -25,6 +25,58 @@
     "RIGHTS.md": {
       "bytes": 1248,
       "sha256": "7ea858e22cf5d67fc270705726cf164cddb00d190b9e7bcf48c5b7ec4ca62cb6"
+    },
+    "audit/2026-10-22-cloud-recompilation/CLOUD_RECOMPILATION.md": {
+      "bytes": 3667,
+      "sha256": "f4e476a970239abb723948326474d56a5683a4d4cd6174c61e68b6da8c5591f0"
+    },
+    "audit/2026-10-22-cloud-recompilation/SHA256SUMS.json": {
+      "bytes": 1707,
+      "sha256": "7e11f6e6f7658dad8e620d1833bd703adebea79f8df2d36017f308752bd7f438"
+    },
+    "audit/2026-10-22-cloud-recompilation/cloud-source-manifest.json": {
+      "bytes": 4403,
+      "sha256": "b64ecba5e68e2f81ca20c645f99bfa4a9656ca95b742dd29f870e49b002aba17"
+    },
+    "audit/2026-10-22-cloud-recompilation/cloud-validation.json": {
+      "bytes": 2073,
+      "sha256": "39959c60bf5326c5f64b19a8cbf93613b57971b996aa59346c3de73ef92abde8"
+    },
+    "audit/2026-10-22-cloud-recompilation/logs/axioms.log": {
+      "bytes": 4759,
+      "sha256": "20655a84305ba7fbce53f7a1036e775f1f8170c6b37d37654f551e1a7c0b73a0"
+    },
+    "audit/2026-10-22-cloud-recompilation/logs/base-case.log": {
+      "bytes": 12,
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120"
+    },
+    "audit/2026-10-22-cloud-recompilation/logs/basic.log": {
+      "bytes": 12,
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120"
+    },
+    "audit/2026-10-22-cloud-recompilation/logs/independent-axioms-types.log": {
+      "bytes": 19652,
+      "sha256": "ef318292ce3f871c3263335723ac35ee1a68ba3610c35e509cdf76f847b5c14f"
+    },
+    "audit/2026-10-22-cloud-recompilation/logs/main.log": {
+      "bytes": 12,
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120"
+    },
+    "audit/2026-10-22-cloud-recompilation/logs/original-sum.log": {
+      "bytes": 12,
+      "sha256": "bde294368bfed77c2cddf8cec271d398aee9cdbab3b26e1059281bd33adb0120"
+    },
+    "audit/2026-10-22-cloud-recompilation/logs/review-checks.log": {
+      "bytes": 312,
+      "sha256": "a62f876ada6cca4c4f42573c8419b06fbbae5883e1a1cbb162340decc30a1bce"
+    },
+    "audit/2026-10-22-cloud-recompilation/logs/verify-summary.log": {
+      "bytes": 253,
+      "sha256": "b51f3528cd88fd120bcab9e1ca746368f7e73b9be825f3098c4d9eaf6c2303c7"
+    },
+    "audit/2026-10-22-cloud-recompilation/scripts/check.sh": {
+      "bytes": 1417,
+      "sha256": "3c458d3e7c7f43498d78bf78ca34330732098d7d47e066c90630e8d67f4afce6"
     },
     "check_package.py": {
       "bytes": 1367,

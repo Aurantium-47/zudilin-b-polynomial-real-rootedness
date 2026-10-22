@@ -38,3 +38,5 @@ python check_package.py
 ## 已独立验收的局部 Lean 附件
 
 [partial-formalization](partial-formalization/README.md) 收录首批 53 个定理和 12 个定义，已独立重编译及公理审计，仅依赖标准三公理。尚缺 B=P(t³) 连接、一般交错及例外参数闭包，不能称为完整 Lean 证明。精确范围、缓存认证限制见[独立 AI 验证报告](partial-formalization/AUDIT_REPORT.md)。通常数学证明通过不等于完整形式化通过。
+
+2026 年 10 月 22 日的[独立 Linux 云端源码重编译](audit/2026-10-22-cloud-recompilation/CLOUD_RECOMPILATION.md)再次通过同一批 53 条定理、12 个定义，附精确依赖版本和规范化日志。这是补充复现证据，不增加数学覆盖范围，也不代表完成全部形式化。

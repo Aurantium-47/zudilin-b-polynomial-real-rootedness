@@ -1,0 +1,8 @@
+Audit date UTC: 2026-10-22
+Zudilin/Basic.lean: exit_code=0
+Zudilin/BaseCase.lean: exit_code=0
+Zudilin/OriginalSum.lean: exit_code=0
+Zudilin.lean: exit_code=0
+AxiomAudit.lean: exit_code=0
+IndependentAudit.lean: exit_code=0
+ReviewChecks.lean: exit_code=0
