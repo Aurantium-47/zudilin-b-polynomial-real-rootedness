@@ -1,0 +1,4 @@
+PASS: original/scaled recurrences, endpoints, and leading coefficients, n=1..11
+PASS: all roots below moving endpoint, a=-9/4, n=2..21
+PASS: all roots below moving endpoint, a=-49/4, n=2..21
+PASS: all roots below moving endpoint, a=-161/4, n=2..21

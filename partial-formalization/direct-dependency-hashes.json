@@ -1,0 +1,92 @@
+[
+  {
+    "module": "Mathlib.Algebra.Polynomial.Roots",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Polynomial/Roots.olean",
+    "sha256": "5A923682E09B78FB798B6DC4CDDA354832F802926C45B0BA6A1F6FE0614DCE55"
+  },
+  {
+    "module": "Mathlib.Data.Complex.Basic",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Complex/Basic.olean",
+    "sha256": "2CF0D8A41E425904CE92F08BB4A314386AA457B85319EB68C7A43FB4B4F1EAD7"
+  },
+  {
+    "module": "Mathlib.Data.Real.Basic",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Real/Basic.olean",
+    "sha256": "900B96E473C2AF78EE7FEEA81B37ACECF4AFEF25E2B49D0BE401352DE999CFAC"
+  },
+  {
+    "module": "Mathlib.Tactic.FieldSimp",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FieldSimp.olean",
+    "sha256": "F6A57153D90B8CD0A4C235A40782AE25698C1E8B33044A404EA2361F39452D18"
+  },
+  {
+    "module": "Mathlib.Tactic.Linarith",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Linarith.olean",
+    "sha256": "B9438F24D9D07EBCF4314313CB6B49A64377C977B5F6BBC13AFB95C9937CF6E4"
+  },
+  {
+    "module": "Mathlib.Tactic.LinearCombination",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/LinearCombination.olean",
+    "sha256": "05A1EF13E7BC1DF9517C932EEB89D324B9EBED31F23F671E38A2B20E4CB973D3"
+  },
+  {
+    "module": "Mathlib.Tactic.NormNum",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/NormNum.olean",
+    "sha256": "1C6C764A13F068CCAF21BC658AA563115BE7995AE3E1E9ECB6F07695FBAB9186"
+  },
+  {
+    "module": "Mathlib.Tactic.Positivity",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Positivity.olean",
+    "sha256": "DEBB071BB55B465CAAFAE17A49DF20A87DE26462CE9DB7972EC15CB57B810E67"
+  },
+  {
+    "module": "Mathlib.Tactic.Ring",
+    "path": "packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean",
+    "sha256": "2015B24085B72AACDA36E59EFFCE13C0162C79E66AC5182E20E3D44659A0705F"
+  },
+  {
+    "module": "Mathlib.Algebra.Polynomial.Roots",
+    "path": "packages/mathlib/Mathlib/Algebra/Polynomial/Roots.lean",
+    "sha256": "C893B01F255ADAC9D0514FC196AA120E45DFDFB88A0928515D6AE58E1832A49B"
+  },
+  {
+    "module": "Mathlib.Data.Complex.Basic",
+    "path": "packages/mathlib/Mathlib/Data/Complex/Basic.lean",
+    "sha256": "9C4BAEDD6F72509A8D52FB2CC72C4066B8C596D2902CD82430C5EC0000666EDD"
+  },
+  {
+    "module": "Mathlib.Data.Real.Basic",
+    "path": "packages/mathlib/Mathlib/Data/Real/Basic.lean",
+    "sha256": "98E256F3836D51A6A241A9196529A647476031DBF4E4A0172EBE6DB8D162698E"
+  },
+  {
+    "module": "Mathlib.Tactic.FieldSimp",
+    "path": "packages/mathlib/Mathlib/Tactic/FieldSimp.lean",
+    "sha256": "2EB06B899A1DA90F3DB8C04CD8CAE2BA6C1B6E3B044503F12760E3D0C096CCAB"
+  },
+  {
+    "module": "Mathlib.Tactic.Linarith",
+    "path": "packages/mathlib/Mathlib/Tactic/Linarith.lean",
+    "sha256": "CFB43497C9EE0526EAF28F9255C53C40D2E4101C3348CEF24E3190F816DD5053"
+  },
+  {
+    "module": "Mathlib.Tactic.LinearCombination",
+    "path": "packages/mathlib/Mathlib/Tactic/LinearCombination.lean",
+    "sha256": "F8CB52935E68047FC60AAF1835CDB37B775B0F46642F544B802804C0D4E95426"
+  },
+  {
+    "module": "Mathlib.Tactic.NormNum",
+    "path": "packages/mathlib/Mathlib/Tactic/NormNum.lean",
+    "sha256": "FCEBBD844471E1FC3ACD5F85449DFABAA423D480D8F0C6A6DB6DB90266FDC082"
+  },
+  {
+    "module": "Mathlib.Tactic.Positivity",
+    "path": "packages/mathlib/Mathlib/Tactic/Positivity.lean",
+    "sha256": "FA271F066B1961D1522FA69C07FDB783DE16D76B8D584EE550D490972880A311"
+  },
+  {
+    "module": "Mathlib.Tactic.Ring",
+    "path": "packages/mathlib/Mathlib/Tactic/Ring.lean",
+    "sha256": "39C86F97C172F42EC53B78B74D2B2582CBBFC81E94A4C5EC93300BD95FBD6A93"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-10-22T10:48:47.1394929Z",
+  "author_theorems": 53,
+  "author_definitions": 12,
+  "independently_audited_declarations": 65,
+  "axioms": [
+    "Classical.choice",
+    "propext",
+    "Quot.sound"
+  ],
+  "unexpected_axioms": [],
+  "source_forbidden_markers": [],
+  "all_frozen_files_unchanged": true,
+  "all_original_files_match_snapshot": true,
+  "rerun_axioms_log_byte_matches_author": true,
+  "verdict": "PASS_PARTIAL_ONLY",
+  "patches_to_author_sources": 0,
+  "full_theorem": "NOT_PROVED",
+  "mathlib_checkout_git_metadata": "Not inspected: filesystem permissions prevented verification of the complete cached checkout; lock files and direct-file hashes do not certify checkout identity or cleanliness.",
+  "independent_supplementary_theorems": 3,
+  "independent_supplementary_compile_exit_code": 0,
+  "independent_audit_compile_exit_code": 0,
+  "author_compile_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "review_type": "Independent AI review and independent recompilation; no human peer review claimed."
+}

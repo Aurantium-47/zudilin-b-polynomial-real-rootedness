@@ -1,0 +1,12 @@
+PASS: direct defining sum equals recurrence, n=0
+PASS: direct defining sum equals recurrence, n=1
+PASS: direct defining sum equals recurrence, n=2
+PASS: direct defining sum equals recurrence, n=3
+PASS: direct defining sum equals recurrence, n=4
+PASS: direct defining sum equals recurrence, n=5
+PASS: direct defining sum equals recurrence, n=6
+PASS: direct defining sum equals recurrence, n=7
+PASS: direct defining sum equals recurrence, n=8
+PASS: direct defining sum equals recurrence, n=9
+PASS: direct defining sum equals recurrence, n=10
+PASS: exceptional and integer parameters a=-10..5, n=2..25 (multiplicities handled)

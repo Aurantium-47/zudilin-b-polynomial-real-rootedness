@@ -1,0 +1,46 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "Unmodified first-batch source and toolchain lock files, checked against the independently captured snapshot. Publication-edited documentation and scripts are covered by the repository release manifest.",
+  "files": [
+    {
+      "path": "AxiomAudit.lean",
+      "sha256": "D5978843916B80648EB4DDA9A558582F32A2888C7982DB7CC598D52C58A86ABA",
+      "bytes": 2327
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "F48D3469F306B7CFC32E3F99602280ED25070A7D928A0E1F3501FEB7CA5A2385",
+      "bytes": 3632
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "EBE10E9DB24AD9DF0111E26597C82807817DE18BF045CAEF75A1501CC9FD973C",
+      "bytes": 300
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "55E97BE96000B5E9E290C9E74482E5E317861499A5540353CE845471BDED8CEA",
+      "bytes": 25
+    },
+    {
+      "path": "Zudilin.lean",
+      "sha256": "28EED832D70704DF731DEB43CBFC0DED9FF446B46261C72DEDFDA5490506A98A",
+      "bytes": 72
+    },
+    {
+      "path": "Zudilin/BaseCase.lean",
+      "sha256": "302CF8392F06983A03DB60E79940CE0CE0DCD3EF53AE25859122F05E38C5A853",
+      "bytes": 2434
+    },
+    {
+      "path": "Zudilin/Basic.lean",
+      "sha256": "28FC1AFD6617CDAB63D1E120B334739FDA194557B719E957D1773E33DFFD9299",
+      "bytes": 7349
+    },
+    {
+      "path": "Zudilin/OriginalSum.lean",
+      "sha256": "8B0DBBFBD54104A176A6A6ED13C1BAB8D81073131EB8DE6B6ED6A1B7828DDEC0",
+      "bytes": 5821
+    }
+  ]
+}

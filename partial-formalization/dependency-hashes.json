@@ -1,0 +1,18 @@
+[
+  {
+    "Path": "toolchain/bin/lean.exe",
+    "Hash": "F59B0C515F65DBF96526279D77FB43152F76BDD77F5FB94F387B75139FAFE68C"
+  },
+  {
+    "Path": "toolchain/bin/lake.exe",
+    "Hash": "864D733FC2903CACAAC67A5F705FA8DCE917629C98C3A185D314E2F9860E7367"
+  },
+  {
+    "Path": "packages/mathlib/lean-toolchain",
+    "Hash": "F28855F24B5253D7E8949F38027066A06CDDE238520086D421BA7AD24C27A691"
+  },
+  {
+    "Path": "packages/mathlib/Mathlib/Algebra/Polynomial/Roots.lean",
+    "Hash": "C893B01F255ADAC9D0514FC196AA120E45DFDFB88A0928515D6AE58E1832A49B"
+  }
+]

@@ -1,0 +1,288 @@
+﻿Zudilin.baseRoot (a : Real) : Real
+'Zudilin.baseRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.baseRoot_nonpos (a : Real) : LE.le.{0} (Zudilin.baseRoot a) 0
+'Zudilin.baseRoot_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.baseRoot_neg {a : Real} (ha : Ne.{1} a 0) (ha₁ : Ne.{1} (HAdd.hAdd.{0, 0, 0} a 1) 0) :
+  LT.lt.{0} (Zudilin.baseRoot a) 0
+'Zudilin.baseRoot_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.baseRoot_lt_cube {a : Real} (ha₁ : Ne.{1} (HAdd.hAdd.{0, 0, 0} a 1) 0) :
+  LT.lt.{0} (Zudilin.baseRoot a) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a 1) 3)
+'Zudilin.baseRoot_lt_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.baseRoot_lt_endpoint {a : Real} (ha : Ne.{1} a 0) (ha₁ : Ne.{1} (HAdd.hAdd.{0, 0, 0} a 1) 0) :
+  LT.lt.{0} (Zudilin.baseRoot a) (Zudilin.endpoint a 2)
+'Zudilin.baseRoot_lt_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_two (a x : Real) :
+  Eq.{1} (Polynomial.eval.{0} x (Zudilin.P a 2))
+    (HDiv.hDiv.{0, 0, 0}
+      (HAdd.hAdd.{0, 0, 0} x
+        (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a 1) 2)))
+      4)
+'Zudilin.eval_P_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_two_complex (a : Real) (z : Complex) :
+  Eq.{1} (Polynomial.eval₂.{0, 0} Complex.ofRealHom z (Zudilin.P a 2))
+    (HDiv.hDiv.{0, 0, 0} (HSub.hSub.{0, 0, 0} z ↑(Zudilin.baseRoot a)) 4)
+'Zudilin.eval_P_two_complex' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.P_two_complex_root_iff (a : Real) (z : Complex) :
+  Iff (Eq.{1} (Polynomial.eval₂.{0, 0} Complex.ofRealHom z (Zudilin.P a 2)) 0) (Eq.{1} z ↑(Zudilin.baseRoot a))
+'Zudilin.P_two_complex_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.P_two_all_complex_roots (a : Real) (z : Complex)
+  (hz : Eq.{1} (Polynomial.eval₂.{0, 0} Complex.ofRealHom z (Zudilin.P a 2)) 0) : ∃ r, And (LE.le.{0} r 0) (Eq.{1} z ↑r)
+'Zudilin.P_two_all_complex_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.P_two_all_complex_roots_strict {a : Real} (ha : Zudilin.Nonexceptional a) (z : Complex)
+  (hz : Eq.{1} (Polynomial.eval₂.{0, 0} Complex.ofRealHom z (Zudilin.P a 2)) 0) :
+  ∃ r, And (LT.lt.{0} r (Zudilin.endpoint a 2)) (Eq.{1} z ↑r)
+'Zudilin.P_two_all_complex_roots_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.N (a : Real) (n : Nat) : Real
+'Zudilin.N' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.C (a : Real) : Nat → Polynomial.{0} Real
+'Zudilin.C' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.P (a : Real) (n : Nat) : Polynomial.{0} Real
+'Zudilin.P' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.C_zero (a : Real) : Eq.{1} (Zudilin.C a 0) 1
+'Zudilin.C_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.C_one (a : Real) : Eq.{1} (Zudilin.C a 1) (Polynomial.C.{0} (HPow.hPow.{0, 0, 0} a 2))
+'Zudilin.C_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.C_recurrence (a : Real) (n : Nat) :
+  Eq.{1} (Zudilin.C a (HAdd.hAdd.{0, 0, 0} n 2))
+    (HAdd.hAdd.{0, 0, 0}
+      (HMul.hMul.{0, 0, 0} (Polynomial.C.{0} (Zudilin.N a n)) (Zudilin.C a (HAdd.hAdd.{0, 0, 0} n 1)))
+      (HMul.hMul.{0, 0, 0}
+        (HMul.hMul.{0, 0, 0} (Polynomial.C.{0} (HAdd.hAdd.{0, 0, 0} (↑n) 1))
+          (HSub.hSub.{0, 0, 0} Polynomial.X.{0}
+            (Polynomial.C.{0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3))))
+        (Zudilin.C a n)))
+'Zudilin.C_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.rising (a : Real) : Nat → Real
+'Zudilin.rising' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_C_zero (a : Real) (n : Nat) :
+  Eq.{1} (Polynomial.eval.{0} 0 (Zudilin.C a n)) (HPow.hPow.{0, 0, 0} (Zudilin.rising a n) 2)
+'Zudilin.eval_C_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.quad (a : Real) (k : Nat) : Real
+'Zudilin.quad' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.quadProd (a : Real) : Nat → Real
+'Zudilin.quadProd' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_C_neg_cube (a : Real) (n : Nat) :
+  Eq.{1} (Polynomial.eval.{0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} a 3)) (Zudilin.C a n)) (Zudilin.quadProd a n)
+'Zudilin.eval_C_neg_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.factorial_cast_ne_zero (n : Nat) : Ne.{1} (↑(Nat.factorial n)) 0
+'Zudilin.factorial_cast_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.P_zero (a : Real) : Eq.{1} (Zudilin.P a 0) 1
+'Zudilin.P_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.P_one (a : Real) : Eq.{1} (Zudilin.P a 1) (Polynomial.C.{0} (HPow.hPow.{0, 0, 0} a 2))
+'Zudilin.P_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P (a x : Real) (n : Nat) :
+  Eq.{1} (Polynomial.eval.{0} x (Zudilin.P a n))
+    (HDiv.hDiv.{0, 0, 0} (Polynomial.eval.{0} x (Zudilin.C a n)) (HPow.hPow.{0, 0, 0} (↑(Nat.factorial n)) 2))
+'Zudilin.eval_P' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.P_recurrence (a : Real) (n : Nat) :
+  Eq.{1} (Zudilin.P a (HAdd.hAdd.{0, 0, 0} n 2))
+    (HAdd.hAdd.{0, 0, 0}
+      (HMul.hMul.{0, 0, 0}
+        (Polynomial.C.{0} (HDiv.hDiv.{0, 0, 0} (Zudilin.N a n) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) 2) 2)))
+        (Zudilin.P a (HAdd.hAdd.{0, 0, 0} n 1)))
+      (HMul.hMul.{0, 0, 0}
+        (HMul.hMul.{0, 0, 0}
+          (Polynomial.C.{0}
+            (HDiv.hDiv.{0, 0, 0} 1
+              (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) 2) 2) (HAdd.hAdd.{0, 0, 0} (↑n) 1))))
+          (HSub.hSub.{0, 0, 0} Polynomial.X.{0}
+            (Polynomial.C.{0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3))))
+        (Zudilin.P a n)))
+'Zudilin.P_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_zero (a : Real) (n : Nat) :
+  Eq.{1} (Polynomial.eval.{0} 0 (Zudilin.P a n))
+    (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Zudilin.rising a n) 2) (HPow.hPow.{0, 0, 0} (↑(Nat.factorial n)) 2))
+'Zudilin.eval_P_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_neg_cube (a : Real) (n : Nat) :
+  Eq.{1} (Polynomial.eval.{0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} a 3)) (Zudilin.P a n))
+    (HDiv.hDiv.{0, 0, 0} (Zudilin.quadProd a n) (HPow.hPow.{0, 0, 0} (↑(Nat.factorial n)) 2))
+'Zudilin.eval_P_neg_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.quad_pos {a : Real} (ha : Ne.{1} a 0) (k : Nat) : LT.lt.{0} 0 (Zudilin.quad a k)
+'Zudilin.quad_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.quadProd_pos {a : Real} (ha : Ne.{1} a 0) (n : Nat) : LT.lt.{0} 0 (Zudilin.quadProd a n)
+'Zudilin.quadProd_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_neg_cube_pos {a : Real} (ha : Ne.{1} a 0) (n : Nat) :
+  LT.lt.{0} 0 (Polynomial.eval.{0} (Neg.neg.{0} (HPow.hPow.{0, 0, 0} a 3)) (Zudilin.P a n))
+'Zudilin.eval_P_neg_cube_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.P_ne_zero_of_parameter_ne_zero {a : Real} (ha : Ne.{1} a 0) (n : Nat) : Ne.{1} (Zudilin.P a n) 0
+'Zudilin.P_ne_zero_of_parameter_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.Nonexceptional (a : Real) : Prop
+'Zudilin.Nonexceptional' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.rising_ne_zero {a : Real} (ha : Zudilin.Nonexceptional a) (n : Nat) : Ne.{1} (Zudilin.rising a n) 0
+'Zudilin.rising_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_zero_pos {a : Real} (ha : Zudilin.Nonexceptional a) (n : Nat) :
+  LT.lt.{0} 0 (Polynomial.eval.{0} 0 (Zudilin.P a n))
+'Zudilin.eval_P_zero_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.recurrence_unique (a : Real) (F : Nat → Polynomial.{0} Real) (h₀ : Eq.{1} (F 0) 1)
+  (h₁ : Eq.{1} (F 1) (Polynomial.C.{0} (HPow.hPow.{0, 0, 0} a 2)))
+  (hrec :
+    ∀ (n : Nat),
+      Eq.{1} (F (HAdd.hAdd.{0, 0, 0} n 2))
+        (HAdd.hAdd.{0, 0, 0}
+          (HMul.hMul.{0, 0, 0}
+            (Polynomial.C.{0}
+              (HDiv.hDiv.{0, 0, 0} (Zudilin.N a n) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) 2) 2)))
+            (F (HAdd.hAdd.{0, 0, 0} n 1)))
+          (HMul.hMul.{0, 0, 0}
+            (HMul.hMul.{0, 0, 0}
+              (Polynomial.C.{0}
+                (HDiv.hDiv.{0, 0, 0} 1
+                  (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) 2) 2)
+                    (HAdd.hAdd.{0, 0, 0} (↑n) 1))))
+              (HSub.hSub.{0, 0, 0} Polynomial.X.{0}
+                (Polynomial.C.{0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3))))
+            (F n))))
+  (n : Nat) : Eq.{1} (F n) (Zudilin.P a n)
+'Zudilin.recurrence_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_at_next_root (a q : Real) (n : Nat)
+  (hq : Eq.{1} (Polynomial.eval.{0} q (Zudilin.P a (HAdd.hAdd.{0, 0, 0} n 1))) 0) :
+  Eq.{1} (Polynomial.eval.{0} q (Zudilin.P a (HAdd.hAdd.{0, 0, 0} n 2)))
+    (HMul.hMul.{0, 0, 0}
+      (HMul.hMul.{0, 0, 0}
+        (HDiv.hDiv.{0, 0, 0} 1
+          (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) 2) 2) (HAdd.hAdd.{0, 0, 0} (↑n) 1)))
+        (HSub.hSub.{0, 0, 0} q (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3)))
+      (Polynomial.eval.{0} q (Zudilin.P a n)))
+'Zudilin.eval_P_at_next_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.recurrence_factor_neg (a q : Real) (n : Nat)
+  (hq : LT.lt.{0} q (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3)) :
+  LT.lt.{0}
+    (HMul.hMul.{0, 0, 0}
+      (HDiv.hDiv.{0, 0, 0} 1
+        (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) 2) 2) (HAdd.hAdd.{0, 0, 0} (↑n) 1)))
+      (HSub.hSub.{0, 0, 0} q (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3)))
+    0
+'Zudilin.recurrence_factor_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_next_neg (a q : Real) (n : Nat)
+  (hq : Eq.{1} (Polynomial.eval.{0} q (Zudilin.P a (HAdd.hAdd.{0, 0, 0} n 1))) 0)
+  (hbound : LT.lt.{0} q (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3))
+  (hp : LT.lt.{0} 0 (Polynomial.eval.{0} q (Zudilin.P a n))) :
+  LT.lt.{0} (Polynomial.eval.{0} q (Zudilin.P a (HAdd.hAdd.{0, 0, 0} n 2))) 0
+'Zudilin.eval_P_next_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.eval_P_next_pos (a q : Real) (n : Nat)
+  (hq : Eq.{1} (Polynomial.eval.{0} q (Zudilin.P a (HAdd.hAdd.{0, 0, 0} n 1))) 0)
+  (hbound : LT.lt.{0} q (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3))
+  (hp : LT.lt.{0} (Polynomial.eval.{0} q (Zudilin.P a n)) 0) :
+  LT.lt.{0} 0 (Polynomial.eval.{0} q (Zudilin.P a (HAdd.hAdd.{0, 0, 0} n 2)))
+'Zudilin.eval_P_next_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.endpoint (a : Real) (n : Nat) : Real
+'Zudilin.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.endpoint_le_zero (a : Real) (n : Nat) : LE.le.{0} (Zudilin.endpoint a n) 0
+'Zudilin.endpoint_le_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.endpoint_next_le_cube (a : Real) (n : Nat) :
+  LE.le.{0} (Zudilin.endpoint a (HAdd.hAdd.{0, 0, 0} n 1)) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑n) a) 3)
+'Zudilin.endpoint_next_le_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.endpoint_monotone (a : Real) : Monotone.{0, 0} (Zudilin.endpoint a)
+'Zudilin.endpoint_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.C_two (a : Real) :
+  Eq.{1} (Zudilin.C a 2)
+    (HAdd.hAdd.{0, 0, 0} Polynomial.X.{0}
+      (Polynomial.C.{0}
+        (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} a 2) (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a 1) 2))))
+'Zudilin.C_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.poch (z : Complex) (n : Nat) : Complex
+'Zudilin.OriginalSum.poch' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.term (w a t : Complex) (n k : Nat) : Complex
+'Zudilin.OriginalSum.term' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.B (w a t : Complex) (n : Nat) : Complex
+'Zudilin.OriginalSum.B' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.poch_zero (z : Complex) : Eq.{1} (Zudilin.OriginalSum.poch z 0) 1
+'Zudilin.OriginalSum.poch_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.poch_eq_zero_of_factor (z : Complex) (n j : Nat) (hj : LT.lt.{0} j n)
+  (hz : Eq.{1} (HAdd.hAdd.{0, 0, 0} z ↑j) 0) : Eq.{1} (Zudilin.OriginalSum.poch z n) 0
+'Zudilin.OriginalSum.poch_eq_zero_of_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.moving_factor_zero (a : Complex) (n k : Nat) (hk : LT.lt.{0} k n) :
+  Eq.{1}
+    (Zudilin.OriginalSum.poch
+      (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} a (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1)) ↑k)
+      (HSub.hSub.{0, 0, 0} n k))
+    0
+'Zudilin.OriginalSum.moving_factor_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.term_moving_zero (w a : Complex) (n k : Nat) (hk : LT.lt.{0} k n) :
+  Eq.{1} (Zudilin.OriginalSum.term w a (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1) n k) 0
+'Zudilin.OriginalSum.term_moving_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.sum_moving_single (w a : Complex) (n : Nat) :
+  Eq.{1}
+    (∑ k ∈ Finset.range (HAdd.hAdd.{0, 0, 0} n 1),
+      Zudilin.OriginalSum.term w a (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1) n k)
+    (Zudilin.OriginalSum.term w a (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1) n n)
+'Zudilin.OriginalSum.sum_moving_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.moving_endpoint (w a : Complex) (n : Nat) :
+  Eq.{1} (Zudilin.OriginalSum.B w a (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1) n)
+    (HDiv.hDiv.{0, 0, 0}
+      (HMul.hMul.{0, 0, 0}
+        (Zudilin.OriginalSum.poch (HMul.hMul.{0, 0, 0} w (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1)) n)
+        (Zudilin.OriginalSum.poch
+          (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1)) n))
+      (HPow.hPow.{0, 0, 0} (↑(Nat.factorial n)) 2))
+'Zudilin.OriginalSum.moving_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.term_neg_parameter_zero (w a : Complex) (n k : Nat) (hk : LT.lt.{0} k n) :
+  Eq.{1} (Zudilin.OriginalSum.term w a (Neg.neg.{0} a) n k) 0
+'Zudilin.OriginalSum.term_neg_parameter_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.neg_parameter_endpoint (w a : Complex) (n : Nat) :
+  Eq.{1} (Zudilin.OriginalSum.B w a (Neg.neg.{0} a) n)
+    (HDiv.hDiv.{0, 0, 0}
+      (HMul.hMul.{0, 0, 0} (Zudilin.OriginalSum.poch (HMul.hMul.{0, 0, 0} w (Neg.neg.{0} a)) n)
+        (Zudilin.OriginalSum.poch (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) (Neg.neg.{0} a)) n))
+      (HPow.hPow.{0, 0, 0} (↑(Nat.factorial n)) 2))
+'Zudilin.OriginalSum.neg_parameter_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.cube_eq_one (w : Complex)
+  (hw : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) w) 1) 0) :
+  Eq.{1} (HPow.hPow.{0, 0, 0} w 3) 1
+'Zudilin.OriginalSum.cube_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.paired_factor (w s : Complex) (k : Nat)
+  (hw : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) w) 1) 0) :
+  Eq.{1}
+    (HMul.hMul.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} w s) ↑k)
+      (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) s) ↑k))
+    (HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} (↑k) 2) (HMul.hMul.{0, 0, 0} (↑k) s))
+      (HPow.hPow.{0, 0, 0} s 2))
+'Zudilin.OriginalSum.paired_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.paired_poch (w s : Complex) (n : Nat)
+  (hw : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) w) 1) 0) :
+  Eq.{1}
+    (HMul.hMul.{0, 0, 0} (Zudilin.OriginalSum.poch (HMul.hMul.{0, 0, 0} w s) n)
+      (Zudilin.OriginalSum.poch (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) s) n))
+    (∏ k ∈ Finset.range n,
+      HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} (↑k) 2) (HMul.hMul.{0, 0, 0} (↑k) s))
+        (HPow.hPow.{0, 0, 0} s 2))
+'Zudilin.OriginalSum.paired_poch' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.moving_endpoint_product (w a : Complex) (n : Nat)
+  (hw : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) w) 1) 0) :
+  Eq.{1} (Zudilin.OriginalSum.B w a (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1) n)
+    (HDiv.hDiv.{0, 0, 0}
+      (∏ k ∈ Finset.range n,
+        HAdd.hAdd.{0, 0, 0}
+          (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} (↑k) 2)
+            (HMul.hMul.{0, 0, 0} (↑k) (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1)))
+          (HPow.hPow.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1) 2))
+      (HPow.hPow.{0, 0, 0} (↑(Nat.factorial n)) 2))
+'Zudilin.OriginalSum.moving_endpoint_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.quadratic_product_real (s : Real) (n : Nat) :
+  Eq.{1}
+    (∏ k ∈ Finset.range n,
+      HAdd.hAdd.{0, 0, 0} (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} (↑k) 2) (HMul.hMul.{0, 0, 0} ↑k ↑s))
+        (HPow.hPow.{0, 0, 0} (↑s) 2))
+    ↑(Zudilin.quadProd (Neg.neg.{0} s) n)
+'Zudilin.OriginalSum.quadratic_product_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.moving_endpoint_real (w : Complex) (a : Real) (n : Nat)
+  (hw : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) w) 1) 0) :
+  Eq.{1} (Zudilin.OriginalSum.B w (↑a) (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} ↑a ↑n) 1) n)
+    ↑(HDiv.hDiv.{0, 0, 0} (Zudilin.quadProd (Neg.neg.{0} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1)) n)
+        (HPow.hPow.{0, 0, 0} (↑(Nat.factorial n)) 2))
+'Zudilin.OriginalSum.moving_endpoint_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.moving_endpoint_positive (w : Complex) (a : Real) (n : Nat)
+  (hw : Eq.{1} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} w 2) w) 1) 0)
+  (hs : Ne.{1} (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} a ↑n) 1) 0) :
+  ∃ r,
+    And (LT.lt.{0} 0 r) (Eq.{1} (Zudilin.OriginalSum.B w (↑a) (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} ↑a ↑n) 1) n) ↑r)
+'Zudilin.OriginalSum.moving_endpoint_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.term_zero_argument (w a : Complex) (n k : Nat) (hk : LT.lt.{0} 0 k) :
+  Eq.{1} (Zudilin.OriginalSum.term w a 0 n k) 0
+'Zudilin.OriginalSum.term_zero_argument' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zudilin.OriginalSum.zero_argument (w a : Complex) (n : Nat) :
+  Eq.{1} (Zudilin.OriginalSum.B w a 0 n)
+    (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Zudilin.OriginalSum.poch a n) 2)
+      (HPow.hPow.{0, 0, 0} (↑(Nat.factorial n)) 2))
+'Zudilin.OriginalSum.zero_argument' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_code=0

@@ -1,0 +1,178 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "All files in PUBLIC_FILES.txt except this manifest, whose self-hash is excluded. Hashes verify identity only, not mathematical correctness.",
+  "files": {
+    "PUBLIC_FILES.txt": {
+      "bytes": 1425,
+      "sha256": "cb7cb57b6590829767164d324757a828b597c5548a436a4cc4c1f8f7e4e2cb20"
+    },
+    "README.md": {
+      "bytes": 4093,
+      "sha256": "0df4a78650387eeaa1576fa30c526ce24aa1cbb325a6b8421dbaa59281350aac"
+    },
+    "README.zh.md": {
+      "bytes": 3727,
+      "sha256": "2b9b7be8f3fd17ec9ce7a94b50f27a7c4e39404d98b9fe89584be56d37013221"
+    },
+    "REFERENCES.md": {
+      "bytes": 3268,
+      "sha256": "e3c69aec4edc8d7a951a2847af3d98da04816234ad5aea3b876f2e4e59d30194"
+    },
+    "REPRODUCIBILITY.md": {
+      "bytes": 3205,
+      "sha256": "9d8fdf8c11bd76a64281cd1589f906f1a90e923607a523c14fda898887acaceb"
+    },
+    "RIGHTS.md": {
+      "bytes": 1248,
+      "sha256": "7ea858e22cf5d67fc270705726cf164cddb00d190b9e7bcf48c5b7ec4ca62cb6"
+    },
+    "check_package.py": {
+      "bytes": 1367,
+      "sha256": "191cb48a61cd74fe5eb55f54e75d62e9ce717f816d3bc5ba30e5aa4284e88a35"
+    },
+    "full_range_proof.md": {
+      "bytes": 8889,
+      "sha256": "bbc1434d850df4201208da8a24d4f7bff8548936bb4044da5e1c1390412bde80"
+    },
+    "independent_review.md": {
+      "bytes": 7339,
+      "sha256": "3eddf08e7b1091b2e96dbdbacffd74299884645503d7bc2ecd3a48b843eff24d"
+    },
+    "independent_sum_check.py": {
+      "bytes": 1045,
+      "sha256": "1672e730d986f6ba3b5528c40ef98d6b373fc7b79234d5b6a5647b493c62a6e2"
+    },
+    "literature_status.md": {
+      "bytes": 2993,
+      "sha256": "1bdbaa833cf6f64b3af5ac0e05bb8c7bd3b03e5dfa273b3d49abaf0d43c897d6"
+    },
+    "logs/default.txt": {
+      "bytes": 248,
+      "sha256": "e23aa5e007731ad0e8e85e0aeb5d842ce50efd200c77cdbd99c7a3cffe0be517"
+    },
+    "logs/direct_sum_integer.txt": {
+      "bytes": 624,
+      "sha256": "c44ce20726d885a40b30a1fca13d9672602b31de025c0e8b0cfef401f8b80f51"
+    },
+    "logs/extended.txt": {
+      "bytes": 285,
+      "sha256": "085bc53eeb38acf024a016ef128f55a69cad7365850164de7b28ca4b66329701"
+    },
+    "partial-formalization/AUDIT_REPORT.md": {
+      "bytes": 6693,
+      "sha256": "d5d2c55cad6687660abaf29c180a5fc6a93d0ca46111b6636df0bfd80f142747"
+    },
+    "partial-formalization/AxiomAudit.lean": {
+      "bytes": 2327,
+      "sha256": "d5978843916b80648eb4dda9a558582f32a2888c7982db7cc598d52c58a86aba"
+    },
+    "partial-formalization/IndependentAudit.lean": {
+      "bytes": 4977,
+      "sha256": "d26240918054c0cae71e3edbbf2ee12ec46d2767acf54efd81151fba7ea95655"
+    },
+    "partial-formalization/README.md": {
+      "bytes": 1750,
+      "sha256": "8516e7c9979b481ece189f13f268e03a35b4db6feb8d1ad2709283a0825f3975"
+    },
+    "partial-formalization/ReviewChecks.lean": {
+      "bytes": 917,
+      "sha256": "a4d080c36a0f5cf8614452a17ab0248a22395de6fa9d369ce230a2969a0097fc"
+    },
+    "partial-formalization/Zudilin.lean": {
+      "bytes": 72,
+      "sha256": "28eed832d70704df731deb43cbfc0ded9ff446b46261c72dedfda5490506a98a"
+    },
+    "partial-formalization/Zudilin/BaseCase.lean": {
+      "bytes": 2434,
+      "sha256": "302cf8392f06983a03db60e79940ce0ce0dcd3ef53ae25859122f05e38c5a853"
+    },
+    "partial-formalization/Zudilin/Basic.lean": {
+      "bytes": 7349,
+      "sha256": "28fc1afd6617cdab63d1e120b334739fda194557b719e957d1773e33dffd9299"
+    },
+    "partial-formalization/Zudilin/OriginalSum.lean": {
+      "bytes": 5821,
+      "sha256": "8b0dbbfbd54104a176a6a6ed13c1bab8d81073131eb8de6b6ed6a1b7828ddec0"
+    },
+    "partial-formalization/dependency-hashes.json": {
+      "bytes": 548,
+      "sha256": "50aa7144f088d7958d99bbf6c7049f93000d01e0aa9ebc73969d99e35432bdbc"
+    },
+    "partial-formalization/direct-dependency-hashes.json": {
+      "bytes": 3733,
+      "sha256": "d8b4b93458d11fc8bb0c7a4801d4480ef175f2542808e3747baceb15bbe44526"
+    },
+    "partial-formalization/lake-manifest.json": {
+      "bytes": 3632,
+      "sha256": "f48d3469f306b7cfc32e3f99602280ed25070a7d928a0e1f3501feb7ca5a2385"
+    },
+    "partial-formalization/lakefile.toml": {
+      "bytes": 300,
+      "sha256": "ebe10e9db24ad9df0111e26597c82807817de18bf045caef75a1501cc9fd973c"
+    },
+    "partial-formalization/lean-toolchain": {
+      "bytes": 25,
+      "sha256": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+    },
+    "partial-formalization/logs/axioms.log": {
+      "bytes": 4816,
+      "sha256": "ca49a6c345ca6bd7b1a9959753148631d8db79bf4f9a4bdc98d8a1a5f01615fe"
+    },
+    "partial-formalization/logs/base-case.log": {
+      "bytes": 16,
+      "sha256": "d4af18d51a459c60d871d5b22cd6e574a1be2c47a6cf8dbbb790b7ffff06bdd5"
+    },
+    "partial-formalization/logs/basic.log": {
+      "bytes": 16,
+      "sha256": "d4af18d51a459c60d871d5b22cd6e574a1be2c47a6cf8dbbb790b7ffff06bdd5"
+    },
+    "partial-formalization/logs/independent-axioms-types.log": {
+      "bytes": 19943,
+      "sha256": "d43aee9aeebdedab53e1245deac1e0d801fa6359c17ff7dcc60dae99b4d1ddfc"
+    },
+    "partial-formalization/logs/main.log": {
+      "bytes": 16,
+      "sha256": "d4af18d51a459c60d871d5b22cd6e574a1be2c47a6cf8dbbb790b7ffff06bdd5"
+    },
+    "partial-formalization/logs/original-sum.log": {
+      "bytes": 16,
+      "sha256": "d4af18d51a459c60d871d5b22cd6e574a1be2c47a6cf8dbbb790b7ffff06bdd5"
+    },
+    "partial-formalization/logs/review-checks.log": {
+      "bytes": 319,
+      "sha256": "aaf67107ce51f12a2ffcbc614a86367a0a8160401f837101b8d475abbb8ca65c"
+    },
+    "partial-formalization/logs/verify-summary.log": {
+      "bytes": 202,
+      "sha256": "649da00475ae29055e94aac021c59e197d254f4ea849a0d36a978ff08c319e77"
+    },
+    "partial-formalization/scripts/check.ps1": {
+      "bytes": 1150,
+      "sha256": "a5316f965ef5aeafa45ad81553d42201218400de81712be9e32c602f56468b11"
+    },
+    "partial-formalization/scripts/verify.ps1": {
+      "bytes": 996,
+      "sha256": "796d2120dd3f20ef60a539eb7895f82f78b7606c432a267e060f31a2558c6ee5"
+    },
+    "partial-formalization/snapshot-sha256.json": {
+      "bytes": 1472,
+      "sha256": "ed3038450fc96a6191404712904591031c6a67e236f3f9b58867f36a7a40f80c"
+    },
+    "partial-formalization/validation-independent.json": {
+      "bytes": 1048,
+      "sha256": "0ff610934d5c7d06afccf0671f830cb21d25c356a19ffb39494176767860a28e"
+    },
+    "partial-formalization/versions.json": {
+      "bytes": 321,
+      "sha256": "dd865c55c4ed703d831ae2cd3c53c1bf8119c24a8457253dd0eedb95c5e478db"
+    },
+    "requirements.txt": {
+      "bytes": 14,
+      "sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+    },
+    "verify_zudilin.py": {
+      "bytes": 2614,
+      "sha256": "565dedc3591023ec99e4d9ee5dbe13a3d152aa97395e3ab7c4cd2410c1a2c30f"
+    }
+  }
+}
